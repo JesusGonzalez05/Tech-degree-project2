@@ -1,0 +1,318 @@
+* {
+border-style: border-box;
+margin: 0px;
+padding: 0px;
+font-family: 'Open Sans', sans-serif;;
+}
+a {
+color:rgb(104, 102, 102); 
+text-decoration: none;
+padding: 1rem 2rem;
+font-weight: bold;
+}
+header,footer,.second-section {
+background-color: #f4f4f4
+}
+header {
+min-width: 100vw;
+}
+h1 {
+text-align: center;
+padding: 1rem;
+font-size: 2rem;
+}
+.nav ul {
+list-style-type: none;
+text-align: center;
+}
+li {
+padding: 0px;    
+}
+.introduction-img {
+order: -1;
+}
+.introduction {
+background-color: #f4f4f4;
+}
+.introduction-p {
+text-align: center;
+}
+.projects {
+padding: 15px;    
+}
+.project-title {
+text-align: center;
+padding: 10px 16px;
+}
+.project-p {
+text-align: center;
+padding: 1rem 1rem;
+}
+.second-section-h2 {
+font-size: 12px;
+padding: 2rem 1rem;    
+}
+.contact-p {
+padding: .5rem 1rem;
+}
+.contact-links {
+padding: 2rem 1rem;
+}
+.phone-number{
+padding: 20px 16px;    
+}
+.email {
+padding: 9px;
+}
+footer {
+padding: 24px;
+font-size: 12px;
+} 
+
+    
+/*==============
+    flex box
+================*/
+
+li {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+}
+.introduction-container {
+display: flex;
+justify-content: center;
+/*flex-direction: column;*/
+padding: 1.5rem;
+}
+.introduction-p {
+padding: 1rem 1rem;
+}
+.introduction-img {
+display: flex;
+padding: 1rem 1rem; 
+}
+.portfolio {
+text-align: center;
+padding: 1rem;
+font-size: 18px;
+}
+.first-section-container {
+display: flex;
+margin: 0px;
+flex-wrap: wrap;
+padding: 0px;
+min-width: 100vw
+}
+.projects {
+flex:1 30%;
+padding: 0px;
+}
+.img-1 {
+height: 10rem;
+min-width: 15rem;
+margin: 1rem;
+padding-top: 1rem;
+}
+.first-br {
+flex-basis: 100%;
+height: 0px;
+}
+.second-section {
+display: flex;
+text-align: center;
+flex-direction: column;
+} 
+.second-section-h2 {
+display: flex;
+text-align: center;
+flex-wrap: wrap;
+flex-direction: column;
+}
+footer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 30px 2%
+}
+.student-name {
+padding: 0 1rem;    
+}
+.footer-nav{
+display: inline-flex;
+justify-content: right;
+padding: 0px 0px;
+margin: 0px;
+}
+
+
+/*=============
+  Media Queries
+==============*/
+@media all and (max-width: 390px) {
+.links {
+background-color: white ;
+margin: 5px;
+padding: 1rem;
+}
+.introduction-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 1.5rem;
+}
+.footer-links {
+display: none;
+}
+}
+
+@media all and (min-width: 768px) {
+h1{
+padding: 2.5rem;
+}
+li {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: center;
+}
+h2.portfolio.class {
+padding: 2.5rem;
+}
+.introduction-img {
+padding: 1rem 1rem;
+order: 0;
+min-width: 50%;
+}
+.first-section-container {
+margin: auto;
+min-width: 100vw;
+padding: 1rem 0rem 4rem 1rem;
+}
+.img-1 {
+height: 13rem;
+/*min-width: 21rem;*/
+margin: 0px 7px;
+}
+.btpbutton {
+display: none;
+}
+}
+
+@media all and (min-width: 1024px) {
+html,body{
+margin: 0px;
+padding: 0px;
+overflow-x: hidden;
+}
+a {
+color:rgb(104, 102, 102); 
+text-decoration: none;
+padding: 20px;
+font-weight: bold;
+}
+header,footer,.introduction-container,.first-section-container,.second-section,.second-section-h2{
+display: flex;
+}
+header {
+justify-content: space-between;
+align-items: center;
+min-width: 88vw;
+padding: 30px 24px
+} 
+h1 {
+padding: 0 1rem;
+font-size: 1.5rem;
+}
+.nav {
+display: inline-flex;
+justify-content: space-between;
+}
+li {
+flex-direction: row;
+}
+.links {
+background-color: transparent;
+margin: 0;
+} 
+.introduction-container{
+display: flex;
+padding: 1.5rem;
+}
+.introduction-p {
+padding: 1rem 1rem;
+min-width: 50%;
+text-align: left;
+}
+.introduction-img {
+padding: 1rem 1rem;
+order: 0;
+min-width: 40%;
+}
+.portfolio {
+text-align: center;
+padding: 1rem;
+}
+.first-section-container {
+margin: auto;
+width:100%;
+height:100%;
+/*min-width: 100vw*/
+padding: 1rem 0rem 4rem 1rem;
+}
+.projects {
+flex:1 30%;
+padding-left: 0px;
+
+}
+.project-title {
+text-align: center;
+padding: 10px 16px;
+margin-right: 35px;
+}
+.project-p {
+text-align: center;
+padding: .5rem 1.5rem;
+margin-right: 25px;
+}
+.img-1 {
+height: 10rem;
+width: 15rem;
+margin-left: 2rem;
+max-width: 75%;
+max-height: 90vh;
+width:auto;
+height:auto;
+
+}
+.first-br {
+flex-basis: 100%;
+height: 0px;
+}
+.second-section {
+text-align: center;
+flex-direction: column;
+} 
+.second-section-h2 {
+text-align: center;
+flex-wrap: wrap;
+flex-direction: column;
+}
+footer {
+justify-content: space-between;
+align-items: center;
+padding: 30px 2%
+}
+.student-name {
+padding: 0 1rem;    
+}
+.footer-nav {
+display: inline-flex;
+justify-content: right;
+padding: 0px 0px;
+margin: 0px;
+}
+.btpbutton {
+display: none;
+}
+}
