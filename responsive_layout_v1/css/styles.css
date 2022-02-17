@@ -1,5 +1,5 @@
 * {
-border-style: border-box;
+box-sizing: border-box;
 margin: 0px;
 padding: 0px;
 font-family: 'Open Sans', sans-serif;;
@@ -9,6 +9,20 @@ color:rgb(104, 102, 102);
 text-decoration: none;
 padding: 1rem 2rem;
 font-weight: bold;
+}
+.links {
+background-color: white ;
+margin: 5px;
+padding: 1rem;
+}
+.introduction-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 1.5rem;
+}
+.footer-links {
+display: none;
 }
 header,footer,.second-section {
 background-color: #f4f4f4
@@ -82,7 +96,6 @@ flex-direction: column;
 .introduction-container {
 display: flex;
 justify-content: center;
-/*flex-direction: column;*/
 padding: 1.5rem;
 }
 .introduction-p {
@@ -111,7 +124,7 @@ padding: 0px;
 .img-1 {
 height: 10rem;
 min-width: 15rem;
-margin: 1rem;
+margin: 1rem 1rem 1rem 2rem; 
 padding-top: 1rem;
 }
 .first-br {
@@ -149,23 +162,6 @@ margin: 0px;
 /*=============
   Media Queries
 ==============*/
-@media all and (max-width: 390px) {
-.links {
-background-color: white ;
-margin: 5px;
-padding: 1rem;
-}
-.introduction-container{
-display: flex;
-justify-content: center;
-flex-direction: column;
-padding: 1.5rem;
-}
-.footer-links {
-display: none;
-}
-}
-
 @media all and (min-width: 768px) {
 h1{
 padding: 2.5rem;
@@ -195,6 +191,15 @@ height: 13rem;
 margin: 0px 7px;
 }
 .btpbutton {
+display: none;
+}
+.links {
+background-color: transparent;
+margin: 0px;
+padding: 0rem;
+}
+
+.footer-links {
 display: none;
 }
 }
@@ -313,6 +318,20 @@ padding: 0px 0px;
 margin: 0px;
 }
 .btpbutton {
+display: none;
+}
+.links {
+background-color: transparent;
+margin: 0px;
+padding: 0rem;
+}
+.introduction-container{
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+padding: 1.5rem;
+}
+.footer-links {
 display: none;
 }
 }
