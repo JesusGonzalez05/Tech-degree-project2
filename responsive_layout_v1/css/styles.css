@@ -198,9 +198,11 @@ background-color: transparent;
 margin: 0px;
 padding: 0rem;
 }
-
-.footer-links {
-display: none;
+.footer-links { 
+display: flex;
+margin: 5px;
+padding: 1rem;
+font-size: 15px;
 }
 }
 
@@ -331,7 +333,10 @@ justify-content: space-between;
 flex-direction: row;
 padding: 1.5rem;
 }
-.footer-links {
-display: none;
+.footer-links { 
+display: flex;
+margin: 5px;
+padding: 1rem;
+font-size: 15px;
 }
 }
